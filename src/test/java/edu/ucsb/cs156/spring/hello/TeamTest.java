@@ -30,12 +30,12 @@ public class TeamTest {
     @Test
     void trueSameObject() {
         Team t = new Team("f25-15");
-        t.addMember("GUNTASH SINGH.");
-        t.addMember("ANDREW.");
-        t.addMember("JAYDEN.");
-        t.addMember("KELVIN APOLLO.");
-        t.addMember("TIM VAN.");
-        t.addMember("AKUL.");
+        t.addMember("GUNTASH SINGH");
+        t.addMember("ANDREW");
+        t.addMember("JAYDEN");
+        t.addMember("KELVIN APOLLO");
+        t.addMember("TIM VAN");
+        t.addMember("AKUL");
         assertTrue(t.equals(t));
     }
 
@@ -43,9 +43,9 @@ public class TeamTest {
     @Test
     void falseDiffClass() {
         Team t = new Team("f25-15");
-        t.addMember("GUNTASH SINGH.");
-        t.addMember("ANDREW.");
-        t.addMember("JAYDEN.");
+        t.addMember("GUNTASH SINGH");
+        t.addMember("ANDREW");
+        t.addMember("JAYDEN");
         assertFalse(t.equals("not a team"));
         assertFalse(t.equals(null));
     }
@@ -54,20 +54,20 @@ public class TeamTest {
     @Test
     void trueNameAndMemMatch() {
         Team t1 = new Team("f25-15");
-        t1.addMember("GUNTASH SINGH.");
-        t1.addMember("ANDREW.");
-        t1.addMember("JAYDEN.");
-        t1.addMember("KELVIN APOLLO.");
-        t1.addMember("TIM VAN.");
-        t1.addMember("AKUL.");
+        t1.addMember("GUNTASH SINGH");
+        t1.addMember("ANDREW");
+        t1.addMember("JAYDEN");
+        t1.addMember("KELVIN APOLLO");
+        t1.addMember("TIM VAN");
+        t1.addMember("AKUL");
 
         Team t2 = new Team("f25-15");
-        t2.addMember("GUNTASH SINGH.");
-        t2.addMember("ANDREW.");
-        t2.addMember("JAYDEN.");
-        t2.addMember("KELVIN APOLLO.");
-        t2.addMember("TIM VAN.");
-        t2.addMember("AKUL.");
+        t2.addMember("GUNTASH SINGH");
+        t2.addMember("ANDREW");
+        t2.addMember("JAYDEN");
+        t2.addMember("KELVIN APOLLO");
+        t2.addMember("TIM VAN");
+        t2.addMember("AKUL");
 
         assertTrue(t1.equals(t2));
     }
@@ -76,14 +76,14 @@ public class TeamTest {
     @Test
     void falseNameMatches() {
         Team t1 = new Team("f25-15");
-        t1.addMember("GUNTASH SINGH.");
-        t1.addMember("ANDREW.");
-        t1.addMember("JAYDEN.");
+        t1.addMember("GUNTASH SINGH");
+        t1.addMember("ANDREW");
+        t1.addMember("JAYDEN");
 
         Team t2 = new Team("f25-15");
-        t2.addMember("KELVIN APOLLO.");
-        t2.addMember("TIM VAN.");
-        t2.addMember("AKUL.");
+        t2.addMember("KELVIN APOLLO");
+        t2.addMember("TIM VAN");
+        t2.addMember("AKUL");
 
         assertFalse(t1.equals(t2));
     }
@@ -92,14 +92,14 @@ public class TeamTest {
     @Test
     void falseMembersMatch() {
         Team t1 = new Team("f25-15");
-        t1.addMember("GUNTASH SINGH.");
-        t1.addMember("ANDREW.");
-        t1.addMember("JAYDEN.");
+        t1.addMember("GUNTASH SINGH");
+        t1.addMember("ANDREW");
+        t1.addMember("JAYDEN");
 
         Team t2 = new Team("spring25-15");
-        t2.addMember("GUNTASH SINGH.");
-        t2.addMember("ANDREW.");
-        t2.addMember("JAYDEN.");
+        t2.addMember("GUNTASH SINGH");
+        t2.addMember("ANDREW");
+        t2.addMember("JAYDEN");
 
         assertFalse(t1.equals(t2));
     }
@@ -108,12 +108,12 @@ public class TeamTest {
     @Test
     void falseNameAndMembersDiff() {
         Team t1 = new Team("f25-15");
-        t1.addMember("GUNTASH SINGH.");
-        t1.addMember("ANDREW.");
+        t1.addMember("GUNTASH SINGH");
+        t1.addMember("ANDREW");
 
         Team t2 = new Team("spring25-15");
-        t2.addMember("TIM VAN.");
-        t2.addMember("AKUL.");
+        t2.addMember("TIM VAN");
+        t2.addMember("AKUL");
 
         assertFalse(t1.equals(t2));
     }
@@ -122,14 +122,14 @@ public class TeamTest {
     @Test
     void hashSameTeams() {
         Team t1 = new Team("f25-15");
-        t1.addMember("GUNTASH SINGH.");
-        t1.addMember("ANDREW.");
-        t1.addMember("JAYDEN.");
+        t1.addMember("GUNTASH SINGH");
+        t1.addMember("ANDREW");
+        t1.addMember("JAYDEN");
 
         Team t2 = new Team("f25-15");
-        t2.addMember("GUNTASH SINGH.");
-        t2.addMember("ANDREW.");
-        t2.addMember("JAYDEN.");
+        t2.addMember("GUNTASH SINGH");
+        t2.addMember("ANDREW");
+        t2.addMember("JAYDEN");
 
         assertTrue(t1.equals(t2));                 
         assertEquals(t1.hashCode(), t2.hashCode());
@@ -139,11 +139,11 @@ public class TeamTest {
     @Test
     void hashMatchExpected() {
         Team t = new Team("f25-15");
-        t.addMember("GUNTASH SINGH.");
-        t.addMember("ANDREW.");
-        t.addMember("JAYDEN.");
+        t.addMember("GUNTASH SINGH");
+        t.addMember("ANDREW");
+        t.addMember("JAYDEN");
         int result = t.hashCode();
-        int EXPECTED = -202903684;
+        int EXPECTED = -544936;
 
         assertEquals(EXPECTED, result);
     }

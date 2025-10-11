@@ -22,7 +22,7 @@ public class DeveloperTest {
 
     @Test
     public void getName_returns_correct_name() {
-        assertEquals("GUNTASH SINGH.", Developer.getName());
+        assertEquals("GUNTASH SINGH", Developer.getName());
     }
 
     @Test
@@ -33,12 +33,12 @@ public class DeveloperTest {
     @Test
     public void getTeam_returns_team_with_correct_members() {
         Team  t = Developer.getTeam();
-        assertTrue(t.getMembers().contains("GUNTASH SINGH."),"Team should contain GUNTASH SINGH.");
-        assertTrue(t.getMembers().contains("ANDREW."),"Team should contain ANDREW.");
-        assertTrue(t.getMembers().contains("JAYDEN."),"Team should contain JAYDEN.");
-        assertTrue(t.getMembers().contains("KELVIN APOLLO."),"Team should contain KELVIN APOLLO.");
-        assertTrue(t.getMembers().contains("TIM VAN."),"Team should contain TIM VAN.");
-        assertTrue(t.getMembers().contains("AKUL."),"Team should contain AKUL.");
+        assertTrue(t.getMembers().contains("GUNTASH SINGH"),"Team should contain GUNTASH SINGH");
+        assertTrue(t.getMembers().contains("ANDREW"),"Team should contain ANDREW");
+        assertTrue(t.getMembers().contains("JAYDEN"),"Team should contain JAYDEN");
+        assertTrue(t.getMembers().contains("KELVIN APOLLO"),"Team should contain KELVIN APOLLO");
+        assertTrue(t.getMembers().contains("TIM VAN"),"Team should contain TIM VAN");
+        assertTrue(t.getMembers().contains("AKUL"),"Team should contain AKUL");
 
     }
 
